@@ -1,0 +1,444 @@
+
+@font-face {
+    font-family: outfit black normal;
+    src: url(./fonts/Outfit-Black.ttf);
+}
+@font-face {
+    font-family: outfit bold;
+    src: url(./fonts/Outfit-Bold.ttf);
+}
+@font-face {
+    font-family: outfit Extra bold;
+    src: url(./fonts/Outfit-ExtraBold.ttf);
+}
+@font-face {
+    font-family: outfitExtralight;
+    src: url(./fonts/Outfit-ExtraLight.ttf);
+}
+@font-face {
+    font-family: outfi light;
+    src: url(./fonts/Outfit-Light.ttf);
+}
+@font-face {
+    font-family: outfit medium;
+    src: url(./fonts/Outfit-Medium.ttf);
+}
+@font-face {
+    font-family: outfit regular;
+    src: url(./fonts/Outfit-Regular.ttf);
+}
+@font-face {
+    font-family: outfit semi bold;
+    src: url(./fonts/Outfit-SemiBold.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: outfit regular;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+/* Header styles */
+.emHeader {
+    background-color: #000;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+
+}
+
+header.emHeader .emMainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+header.emHeader .emLogo {
+    display: flex;
+    align-items: center;
+}
+
+header.emHeader .emLogo img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header.emHeader .emLogo #emMainHeading {
+    font-family: outfit bold;
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+}
+
+header.emHeader .emMainNav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header.emHeader .emMainNav ul li {
+    margin: 0 15px;
+}
+
+header.emHeader .emMainNav ul li a {
+    text-decoration: none;
+    font-family: outfit medium;
+    font-size: 16px;
+    color: #ccc;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+header.emHeader .emMainNav ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Main section with background */
+.emMainSection {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/mainBackground.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.emMainSection .emMainDiv h1 {
+    font-family: outfit extra bold;
+    font-size: 48px;
+    margin-top: -60px;
+    color: #ffff;
+}
+.emMainSection .emMainDiv p {
+    font-family: outfit medium;
+    font-size: 20px;
+    color: #ffff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.emMainSection .emMainDiv a{
+    font-family: outfit bold;
+    font-size: 18px;
+    color: #fff;
+    background-color: #1f1f1f;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.emMainSection .emMainDiv a:hover{
+    background-color: #515253;
+}
+
+/* First cards after the background cover */
+.emFirstCards {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+.emFirstCards h2 {
+    font-family: outfit bold;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+.emFirstCards .emCardRow {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.emFirstCards .emCardRow .emFirstCard,
+.emFirstCards .emCardRow .emSecondCard {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.emFirstCards .emCardRow .emFirstCard:hover,
+.emFirstCards .emCardRow .emSecondCard:hover {
+    transform: translateY(-5px); /*is used to move an element vertically by -5 pixels without affecting the document. */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.emFirstCards .emCardRow .emFirstCard img,
+.emFirstCards .emCardRow .emSecondCard img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; /* we use this so the image covers the spaces */
+    border-bottom: 1px solid #ddd;
+}
+.emFirstCards .emCardRow .emFirstCard .card-body,
+.emFirstCards .emCardRow .emSecondCard .card-body {
+    padding: 20px;
+}
+.emFirstCards .emCardRow .emFirstCard .card-title,
+.emFirstCards .emCardRow .emSecondCard .card-title {
+    font-family: outfit bold;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.emFirstCards .emCardRow .emFirstCard .card-text,
+.emFirstCards .emCardRow .emSecondCard .card-text {
+    font-family: 'outfit regular', sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.emFirstCards .emCardRow .emFirstCard .btn,
+.emFirstCards .emCardRow .emSecondCard .btn {
+    font-family: outfit medium;
+    font-size: 14px;
+    color: #fff;
+    background-color: #1f1f1f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.emFirstCards .emCardRow .emFirstCard .btn:hover,
+.emFirstCards .emCardRow .emSecondCard .btn:hover {
+    background-color: #515253;
+}
+/* Third background */
+.emChooseBediTransport {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/cbb41a92-e72b-49fd-ae05-fa12bb7d6201.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.emChooseBediTransport .emThirdDiv h2 {
+    font-family: outfit extra bold;
+    font-size: 40px;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+.emChooseBediTransport .emThirdDiv p {
+    font-family: outfit medium;
+    font-size: 20px;
+    color: #ffff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.emChooseBediTransport .emThirdDiv a{
+    font-family: outfit bold;
+    font-size: 18px;
+    color: #fff;
+    background-color: #1f1f1f;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.emChooseBediTransport .emThirdDiv a:hover{
+    background-color: #515253;
+}
+/* style of the beditransport video section */
+.emBediTransVideo .emBediContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #fff;
+    position: relative;
+    left: 150px;
+}
+
+.emBediTransVideo .emBediContainer .emBedRow {
+    display: contents; /* Allows direct children to participate in the grid layout */
+}
+
+ .emBediTransVideo .emBediContainer .emBediColOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+ }
+
+
+.emBediTransVideo .emBediContainer .emBediColOne h2 {
+    font-family: outfit bold;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.emBediTransVideo .emBediContainer .emBediColOne p {
+    font-family: outfit regular;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.emBediTransVideo .emBediContainer .emBediColOne a {
+  border:1px solid #1f1f1f;
+  background-color: #1f1f1f;
+    font-family: outfit bold;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 12px ;
+    text-decoration: none;
+    display: block;
+
+}
+
+.emBediTransVideo .emBediContainer .emBediColOne a:hover {
+    background-color: #515253;
+}
+
+.emBediTransVideo .emBediContainer video{
+    width: 50%;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}   
+.emContactBediTransport{
+    background-color: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    padding: 70px 20px;
+
+}
+.emContactBediTransport h2{
+    font-family: outfit bold;
+    font-size: 32px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+.emContactBediTransport p{
+    font-family: outfit medium;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.emContactBediTransport a{
+    font-family: outfit bold;
+    font-size: 18px;
+    color: #1f1f1f;
+    background-color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.emContactBediTransport a:hover{
+    background-color: #d3d3d3;
+}
+
+/* Style of the cards with icons and paragraph */
+.emFourCards {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.emFourCards .emFcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.emFourCards .emfRow {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.emFourCards .emfCol {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+}
+
+.emFourCards .emfCol:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.emFourCards .emfCol i {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.emFourCards .emfCol h3 {
+    font-family: outfit bold;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.emFourCards .emfCol p {
+    font-family: outfit regular;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+.emFourCards .emfCol a {
+    font-family: outfit medium;
+    font-size: 14px;
+    color: #1f1f1f;
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.emFourCards .emfCol a:hover {
+    background-color: #d3d3d3;
+}
+/* Footer styles */
+.emFooter {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: outfit medium;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.emFooterDiv p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.emFooterDiv a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.emFooterDiv a:hover {
+    color: #ccc;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
