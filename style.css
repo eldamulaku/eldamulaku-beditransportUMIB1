@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: outfit black normal;
     src: url(./fonts/Outfit-Black.ttf);
@@ -39,13 +38,15 @@ body {
     overflow-x: hidden;
 }
 /* Header styles */
-.emHeader {
-    background-color: #000;
+header.emHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #000;
     position: sticky;
     top: 0;
-
+    z-index: 1000;
 }
 
 header.emHeader .emMainNav {
@@ -95,6 +96,42 @@ header.emHeader .emMainNav ul li a {
 header.emHeader .emMainNav ul li a:hover {
     color: #fff;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Add styles for the burger menu */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.burger-menu div {
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hide the navigation menu by default on mobile */
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #000;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Show the navigation menu when active */
+.nav-menu.active {
+    display: flex;
 }
 
 /* Main section with background */
@@ -449,4 +486,28 @@ header.emHeader .emMainNav ul li a:hover {
 .emFooterDiv a:hover {
     color: #ccc;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #000;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
 }
