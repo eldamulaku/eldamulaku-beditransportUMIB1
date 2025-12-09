@@ -436,6 +436,14 @@ header.emHeader .emMainNav ul li a:hover {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease, text-shadow 0.3s ease;
+  
+}
+ .emFooter ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .emFooterDiv a:hover {
