@@ -467,6 +467,11 @@ header.emHeader .emMainNav ul li a:hover {
 /* /* Media query for mobile devices */
 
 @media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+        width: fit-content;
+    }
+
         /* Adjust header layout */
         header.emHeader .emMainNav ul {
             flex-direction: column;
@@ -504,6 +509,36 @@ header.emHeader .emMainNav ul li a:hover {
             padding: 10px 0;
             display: block;
         }
+        /* style of the part with the video i removed the video in mobile device */
+       .emBediTransVideo .emBediContainer {
+            display: block;
+            padding: 20px;
+            background-color: #fff;
+            position: relative;
+            left: 0;
+        }
+        .emBediColOne{
+            width: 100%;
+            padding: 0;
+        }
+        .emBediTransVideo .emBediContainer video{
+            display: none;
+        }
+
+        /* Style of the first section */
+        .emMainSection .emMainDiv h1 {
+            margin-top: -40px;
+            width: auto;
+        }
+        /* style of the bootstrap cards */
+        .emFirstCards .emCardRow .emFirstCard,
+        .emFirstCards .emCardRow .emSecondCard {
+            flex: 1 1 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        /* Style of four cards for mobile device */
         .emFourCards {
             padding: 40px 15px;
         }
@@ -535,6 +570,15 @@ header.emHeader .emMainNav ul li a:hover {
             font-size: 14px;
             padding: 8px 18px;
         }
+        /* style of footer for mobile device */
+        .emFooter{
+            font-size: 14px;
+            padding: 15px 10px;
+        }
+        .emFooter ul{
+            flex-direction: column;
+        }
+
     }
     
 
