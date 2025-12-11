@@ -499,6 +499,7 @@ header.emHeader .emMainNav ul li a:hover {
         display: flex;
         animation: dropdownFade 0.3s;
     }
+    /* keyframes are used for dropdown animation in css */
     @keyframes dropdownFade {
         from { opacity: 0; transform: translateY(-10px); }
         to { opacity: 1; transform: translateY(0); }
@@ -589,7 +590,7 @@ header.emHeader .emMainNav ul li a:hover {
         padding: 15px 10px;
     }
     .emFooter ul {
-        flex-direction: column;
+        display: none;
     }
 }
     
