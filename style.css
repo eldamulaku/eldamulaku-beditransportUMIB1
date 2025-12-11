@@ -107,9 +107,6 @@ header.emHeader .emMainNav ul li a:hover {
     display: none;
 }
 
-
-
-
 /* Main section with background */
 .emMainSection {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/mainBackground.JPG');
