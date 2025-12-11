@@ -467,118 +467,130 @@ header.emHeader .emMainNav ul li a:hover {
 /* /* Media query for mobile devices */
 
 @media screen and (max-width: 768px) {
-    body{
+    body {
         overflow-x: hidden;
         width: fit-content;
     }
-
-        /* Adjust header layout */
-        header.emHeader .emMainNav ul {
-            flex-direction: column;
-            background: #1f1f1f;
-            position: absolute;
-            top: 70px;
-            left: 0;
-            width: 100%;
-            display: none; /* Hide menu by default */
-        }
-        /* Show burger icon */
-        .burger {
-            display: block;
-        }
-    
-        /* Hide the menu by default */
-        .emNavLinks {
-            display: none;
-            flex-direction: column;
-            background: #1f1f1f;
-            width: 100%;
-            padding: 20px;
-            position: absolute;
-            top: 70px;
-            left: 0;
-        }
-    
-        /* When JS adds .active → show menu */
-        .emNavLinks.active {
-            display: flex;
-        }
-    
-        .emNavLinks li a {
-            color: black;
-            padding: 10px 0;
-            display: block;
-        }
-        /* style of the part with the video i removed the video in mobile device */
-       .emBediTransVideo .emBediContainer {
-            display: block;
-            padding: 20px;
-            background-color: #fff;
-            position: relative;
-            left: 0;
-        }
-        .emBediColOne{
-            width: 100%;
-            padding: 0;
-        }
-        .emBediTransVideo .emBediContainer video{
-            display: none;
-        }
-
-        /* Style of the first section */
-        .emMainSection .emMainDiv h1 {
-            margin-top: -40px;
-            width: auto;
-        }
-        /* style of the bootstrap cards */
-        .emFirstCards .emCardRow .emFirstCard,
-        .emFirstCards .emCardRow .emSecondCard {
-            flex: 1 1 100%;
-            max-width: 100%;
-            margin-bottom: 20px;
-        }
-
-        /* Style of four cards for mobile device */
-        .emFourCards {
-            padding: 40px 15px;
-        }
-    
-        .emFourCards .emfRow {
-            flex-direction: column;
-            gap: 25px;
-        }
-    
-        .emFourCards .emfCol {
-            flex: 1 1 100%;
-            max-width: 100%;
-            padding: 25px;
-        }
-    
-        .emFourCards .emfCol i {
-            font-size: 35px;
-        }
-    
-        .emFourCards .emfCol h3 {
-            font-size: 18px;
-        }
-    
-        .emFourCards .emfCol p {
-            font-size: 15px;
-        }
-    
-        .emFourCards .emfCol a {
-            font-size: 14px;
-            padding: 8px 18px;
-        }
-        /* style of footer for mobile device */
-        .emFooter{
-            font-size: 14px;
-            padding: 15px 10px;
-        }
-        .emFooter ul{
-            flex-direction: column;
-        }
-
+    .burger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        z-index: 1100;
+        color: #ffffff;
     }
+    .emNavLinks {
+        display: none;
+        flex-direction: column;
+        background: #1f1f1f;
+        width: 100vw;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        padding: 0 0 10px 0;
+        margin: 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        transition: max-height 0.3s ease;
+    }
+    .emNavLinks.active {
+        display: flex;
+        animation: dropdownFade 0.3s;
+    }
+    @keyframes dropdownFade {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .emNavLinks li {
+        margin: 0;
+        text-align: center;
+    }
+    .emNavLinks li a {
+        color: #fff;
+        font-size: 18px;
+        padding: 14px 0;
+        display: block;
+        border-bottom: 1px solid #222;
+        text-decoration: none;  
+    }
+    .emNavLinks li:last-child a {
+        border-bottom: none;
+    }
+    .emNavLinks li a:hover {
+        background: #222;
+    }
+    #menu-toggle {
+        display: none;
+        
+    }
+    /* Hide desktop nav spacing */
+    header.emHeader .emMainNav ul {
+        margin: 0;
+        padding: 0;
+    }
+    /* Video section mobile fix */
+    .emBediTransVideo .emBediContainer {
+        display: block;
+        padding: 20px;
+        background-color: #fff;
+        position: relative;
+        left: 0;
+    }
+    .emBediColOne {
+        width: 100%;
+        padding: 0;
+    }
+    .emBediTransVideo .emBediContainer video {
+        display: none;
+    }
+    /* Main section heading mobile */
+    .emMainSection .emMainDiv h1 {
+        margin-top: -40px;
+        width: auto;
+    }
+    /* Cards mobile */
+    .emFirstCards .emCardRow .emFirstCard,
+    .emFirstCards .emCardRow .emSecondCard {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    /* Four cards mobile */
+    .emFourCards {
+        padding: 40px 15px;
+    }
+    .emFourCards .emfRow {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .emFourCards .emfCol {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 25px;
+    }
+    .emFourCards .emfCol i {
+        font-size: 35px;
+    }
+    .emFourCards .emfCol h3 {
+        font-size: 18px;
+    }
+    .emFourCards .emfCol p {
+        font-size: 15px;
+    }
+    .emFourCards .emfCol a {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+    /* Footer mobile */
+    .emFooter {
+        font-size: 14px;
+        padding: 15px 10px;
+    }
+    .emFooter ul {
+        flex-direction: column;
+    }
+}
     
 
