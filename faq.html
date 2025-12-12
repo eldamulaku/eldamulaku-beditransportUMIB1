@@ -9,14 +9,19 @@
 </head>
 <body id="EM">
     <!-- this is the headee, we use it to navigate through the website -->
-    <header class="emHeader">
+      <header class="emHeader">
         <nav class="emMainNav">
-            <div class="logo">
+            <div class="emLogo">
                 <a href="./index.html">
-                <img src="./images/logo.PNG" alt="logo" >
+                    <img src="./images/logo.PNG" alt="logo">
                 </a>
             </div>
-            <ul>
+        
+           <!-- burger menu -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="burger">&#9776;</label>
+        
+            <ul class="emNavLinks">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./services.html">Services</a></li>

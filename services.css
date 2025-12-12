@@ -90,3 +90,69 @@ header.emHeader .emMainNav ul li a:hover {
     color: #fff;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        width: fit-content;
+    }
+    .burger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        z-index: 1100;
+        color: #ffffff;
+    }
+    .emNavLinks {
+        display: none;
+        flex-direction: column;
+        background: #1f1f1f;
+        width: 100vw;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        padding: 0 0 10px 0;
+        margin: 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        transition: max-height 0.3s ease;
+    }
+    .emNavLinks.active {
+        display: flex;
+        animation: dropdownFade 0.3s;
+    }
+    /* keyframes are used for dropdown animation in css */
+    @keyframes dropdownFade {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .emNavLinks li {
+        margin: 0;
+        text-align: center;
+    }
+    .emNavLinks li a {
+        color: #fff;
+        font-size: 18px;
+        padding: 14px 0;
+        display: block;
+        border-bottom: 1px solid #222;
+        text-decoration: none;  
+    }
+    .emNavLinks li:last-child a {
+        border-bottom: none;
+    }
+    .emNavLinks li a:hover {
+        background: #222;
+    }
+    #menu-toggle {
+        display: none;
+        
+    }
+    /* Hide desktop nav spacing */
+    header.emHeader .emMainNav ul {
+        margin: 0;
+        padding: 0;
+    }
+}
