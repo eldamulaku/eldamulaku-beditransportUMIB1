@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: outfit black normal;
     src: url(./fonts/Outfit-Black.ttf);
@@ -124,12 +126,14 @@ header.emHeader .emMainNav ul li a:hover {
     margin: 30px auto;
     border-radius: 2px;
 }
+/* style of the second part with smart ship */
 .emShipSmart{
     background-image: url(./images/shipping1.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     padding: 60px 20px;
     height: 50vh;
+ 
 }
 .emShipSmart .emShipContainer{
     background-color: rgba(0, 0, 0, 0.6);
@@ -138,7 +142,8 @@ header.emHeader .emMainNav ul li a:hover {
     margin: 0 auto;
     padding: 20px;
     border-radius: 8px;
-    text-align: center;
+    text-align: center;   position: relative;
+    top: 100px;
 }
 .emShipSmart a{
     color: #fff;
@@ -152,8 +157,197 @@ header.emHeader .emMainNav ul li a:hover {
 .emShipSmart a:hover{
    color: #000000;
 }
+/* style of emStories */
 
+.emStories {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.emStoriesContainer {
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+}
+.emStoriesRow {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.emStory {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10), 0 1.5px 4px rgba(0,0,0,0.08);
+    flex: 1 1 320px;
+    max-width: 360px;
+    min-width: 280px;
+    margin: 20px 0;
+    padding: 24px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: box-shadow 0.3s;
+}
+.emStory:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.16), 0 3px 8px rgba(0,0,0,0.12);
+}
+.emStory img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    object-fit: cover;
+    height: 180px;
+}
+.emStory h2 {
+    font-family: outfit bold;
+    font-size: 1.3rem;
+    margin: 0 0 10px 0;
+}
+.emStory p {
+    font-size: 1rem;
+    color: #444;
+    margin: 0 0 10px 0;
+    flex: 1;
+}
+.emStoriesContainer a {
+    display: block;
+    margin: 30px auto 0 auto;
+    color: #000;
+    text-decoration: none;
+    font-family: outfit bold;
+    background-color: #bc9103;
+    padding: 12px 32px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    width: fit-content;
+}
+.emStoriesContainer a:hover {
+    background-color: #a37e02;
+    color: #fff;
+}
+/* Customer First Section */
+.emCostumerFirst {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  text-align: center;
+    font-size: 30px;
+}
+.emCostumerFirst .emContainerCostumer h1 {
+    font-family: outfit bold;
+    padding: 0 ;
+    margin: 0;
+}
+.emCostumerLine{
+    width: 100px;
+    height: 4px;
+    background-color: #515050;
+    margin: 30px auto;
+    border-radius: 2px;
+}
+.emContainerCostumer a {
+    display: block;
+    margin: 30px auto 0 auto;
+    color: #000;
+    text-decoration: none;
+    font-family: outfit bold;
+    background-color: #bc9103;
+    padding: 12px 32px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    width: fit-content;
+}
+.emContainerCostumer a:hover {
+    background-color: #a37e02;
+}
 
+/* Fact Sheet Section */
+.emFactSheet {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    background: none;
+    background-image: url(./images/shipping4.jpeg);
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+.emFactSheetContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 90%;
+    padding: 0 20px;
+    
+}
+.emFactSheetCard {
+    background: rgba(255,255,255,0.85);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13), 0 1.5px 4px rgba(0,0,0,0.08);
+    padding: 36px 32px 28px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 250px;
+    gap: 0;
+}
+.emFactStat {
+    text-align: center;
+    margin: 0 0 0 0;
+    width: 100%;
+}
+.emFactStatValue {
+    font-family: outfit bold;
+    font-size: 2.3rem;
+    color: #222;
+    margin-bottom: 2px;
+}
+.emFactStatLabel {
+    font-size: 1.08rem;
+    color: #444;
+    margin-bottom: 0;
+}
+.emFactDivider {
+    width: 100%;
+    height: 2px;
+    background: #ededed;
+    margin: 22px 0;
+    border-radius: 1px;
+}
+.emFactSheetBtn {
+    display: block;
+    margin: 32px auto 0 auto;
+    color: #000;
+    text-decoration: none;
+    font-family: outfit bold;
+    background-color: #ffd600;
+    padding: 16px 0;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    font-size: 1.15rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+.emFactSheetBtn:hover {
+    background-color: #bc9103;
+    color: #fff;
+}
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
@@ -223,4 +417,8 @@ header.emHeader .emMainNav ul li a:hover {
     position: relative;
     top: 100px;
   } 
+  .emFactSheetCard{
+    position: relative;
+    left: 0;
+  }
    }
