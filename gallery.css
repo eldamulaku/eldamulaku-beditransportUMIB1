@@ -104,6 +104,36 @@ header.emHeader .emMainNav ul li a:hover {
 #menu-toggle {
     display: none;
 }
+.emCarouselHeading{
+    text-align: center;
+    font-family: outfit bold;
+    font-size: 40px;
+    padding-top: 80px;
+}
+.emCarouselLine{
+    width: 100px;
+        height: 4px;
+        background-color: #515050;
+        margin: 30px auto;
+        border-radius: 2px;
+}
+.carousel-inner img{
+width: 200%;
+height: 100vh;
+}
+.carousel-inner h5{
+    color: #ffffff;
+    font-family: outfit extra bold;
+    font-size: 30px;
+}
+.carousel-inner p{
+    color: #ffffff;
+    font-family: outfit medium;
+    font-size: 20px
+}
+.carousel-inner span{
+    color: #ffffff;
+}
 
 @media screen and (max-width: 768px) {
     body {
