@@ -1,41 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EldaMulaku-BediTransport</title>
-    <link rel="stylesheet" href="./services.css">
-
-</head>
-<body id="EM">
+    <link rel="stylesheet" href="./services.css" />
+  </head>
+  <body id="EM">
     <!-- this is the headee, we use it to navigate through the website -->
-        <header class="emHeader">
-        <nav class="emMainNav">
-            <div class="emLogo">
-                <a href="./index.html">
-                    <img src="./images/logo.PNG" alt="logo">
-                </a>
-            </div>
-        
-           <!-- burger menu -->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="burger">&#9776;</label>
-        
-            <ul class="emNavLinks">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./blog.html">News</a></li>
-                <li><a href="./team.html">Team</a></li>
-                <li><a href="./testimonials.html">Testimonials</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./terms.html">Terms & Policies</a></li>
-            </ul>
-        </nav>
+    <header class="emHeader">
+      <nav class="emMainNav">
+        <div class="emLogo">
+          <a href="./index.html">
+            <img src="./images/logo.PNG" alt="logo" />
+          </a>
+        </div>
+
+        <!-- burger menu -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="burger">&#9776;</label>
+
+        <ul class="emNavLinks">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./blog.html">News</a></li>
+          <li><a href="./team.html">Team</a></li>
+          <li><a href="./testimonials.html">Testimonials</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./terms.html">Terms & Policies</a></li>
+        </ul>
+      </nav>
     </header>
-    <h1>services</h1>
+    <!-- section about the first part -->
+    <section class="emMainService">
+      <div class="container">
+        <h1>Our Service</h1>
+        <p>
+          We offer reliable transport and logistics services to move your goods
+          safely and on time. Our team handles everything from pickup to
+          delivery, ensuring fast, secure, and efficient transport.
+        </p>
+      </div>
+    </section>
+    <!-- section about two columns -->
+    <section class="emButtons">
+      <div class="emButtonContainer">
+        <div class="emButtonRow">
+          <div class="emColOne">
+            <a href="./blog.html">News</a>
+          </div>
+          <div class="emColTwo">
+            <a href="./team.html">Community</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section about two columns -->
+    <section class="emComunity">
+      <div class="emReportSection">
+        <div class="emReportContent">
+          <h2>2024 Sustainability and Community Impact Report</h2>
+          <p>
+            Progressing toward our goals to deliver social impact and address
+            environmental challenges while taking care of our people and serving
+            our customers and communities.
+          </p>
+          <a href="./about.html" class="emReportBtn">Read The Report &rarr;</a>
+        </div>
+        <div class="emReportImage">
+          <img
+            src="./images/622d307f-dab5-4673-9e31-0227cab86e96.JPG"
+            alt="UPS Electric Vehicle under tree"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- section about shipping abroad -->
+    <section class="emShipingAbroad">
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">International Shipping</h5>
+              <p class="card-text">
+                We provide fast and secure shipping services to destinations
+                worldwide, ensuring your goods arrive safely and on schedule.
+              </p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Global Transport Solutions</h5>
+              <p class="card-text">
+                Our experienced team manages all aspects of international
+                transport, from customs clearance to final delivery.
+              </p>
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section about earnings -->
+    <section class="emEarnings">
+      <div class="emEarningsContainer">
+        <div class="emEarningsImage">
+          <img src="./images/shipping3.jpeg" alt="UPS truck at NYSE" />
+        </div>
+        <div class="emEarningsCard">
+          <span class="emEarningsEvent">Upcoming Event</span>
+          <h3>Q4 2025 United Parcel Service, Inc. Earnings Conference Call</h3>
+          <p class="emEarningsDate">Jan 27, 2026 8:30 AM ET</p>
+        </div>
+      </div>
+    </section>
     <script src="./javaScript/services.js"></script>
-</body>
+  </body>
 </html>
