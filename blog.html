@@ -1,41 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EldaMulaku-BediTransport</title>
-    <link rel="stylesheet" href="./blog.css">
-
-</head>
-<body id="EM">
+    <link rel="stylesheet" href="./blog.css" />
+  </head>
+  <body id="EM">
     <!-- this is the headee, we use it to navigate through the website -->
-        <header class="emHeader">
-        <nav class="emMainNav">
-            <div class="emLogo">
-                <a href="./index.html">
-                    <img src="./images/logo.PNG" alt="logo">
-                </a>
-            </div>
-        
-           <!-- burger menu -->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="burger">&#9776;</label>
-        
-            <ul class="emNavLinks">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./blog.html">News</a></li>
-                <li><a href="./team.html">Team</a></li>
-                <li><a href="./testimonials.html">Testimonials</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./terms.html">Terms & Policies</a></li>
-            </ul>
-        </nav>
+    <header class="emHeader">
+      <nav class="emMainNav">
+        <div class="emLogo">
+          <a href="./index.html">
+            <img src="./images/logo.PNG" alt="logo" />
+          </a>
+        </div>
+
+        <!-- burger menu -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="burger">&#9776;</label>
+
+        <ul class="emNavLinks">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./blog.html">News</a></li>
+          <li><a href="./team.html">Team</a></li>
+          <li><a href="./testimonials.html">Testimonials</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./terms.html">Terms & Policies</a></li>
+        </ul>
+      </nav>
     </header>
-    <h1>blog</h1>
+    <!-- statement section -->
+    <section class="emStatementSection">
+      <div class="emStatementContent">
+        <div class="emLogoContainer">
+          <img src="./images/logo.PNG" alt="Bedi Logo" class="BediLogo" />
+        </div>
+        <div class="emStatementCard">
+          <p class="emStatementLabel">NEWS</p>
+          <h2 class="emStatementTitle">Bedi Transport & Logistics Update</h2>
+          <p class="emStatementText">
+            Stay informed with the latest developments and achievements from our
+            team.
+          </p>
+          <a href="./about.html" class="emReadMoreBtn"
+            >Read more <span class="arrow">&#8594;</span></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- three cards with news section -->
+    <section class="emNewsCards">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./images/88f21366-9f7e-4ea4-852b-a33bbca083b0.jpeg"
+              class="card-img-top"
+              alt="Fleet Expansion"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fleet Expansion Announced</h5>
+              <p class="card-text">
+                Bedi Transport has added five new trucks to its fleet,
+                increasing delivery capacity and improving service reliability
+                for clients across the region.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./images/IMG_4578.jpeg"
+              class="card-img-top"
+              alt="Safety Training"
+            />
+            <div class="card-body">
+              <h5 class="card-title">New Safety Training Program</h5>
+              <p class="card-text">
+                Our drivers completed an advanced safety training course,
+                ensuring compliance with the latest transport regulations and
+                enhancing road safety standards.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./images/IMG_5147 (1).jpeg"
+              class="card-img-top"
+              alt="Green Logistics"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sustainable Logistics Initiative</h5>
+              <p class="card-text">
+                We have launched a new eco-friendly logistics program, reducing
+                emissions and promoting greener transport solutions for all our
+                operations.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- a contact for media and other news  -->
+    <section class="emSocialMedia">
+      <div class="emSocialMediaContainer">
+        <div class="emMediaRelations">
+          <div class="emMediaRelations-left">
+            <h3>Media Relations</h3>
+            <p class="emMediaRelations-subtitle">
+              FOR REPORTERS AND MEDIA OUTLETS
+            </p>
+            <p>
+              Journalists on deadlines can easily reach the Media Relations team
+              by phone or email around the globe and around the clock. For
+              urgent press needs, call
+              <a href="tel:+383-49-840-442" class="emMediaRelations-link"
+                >+383-49-840-442</a
+              >
+              for directions to reach us after-hours.
+            </p>
+            <p>
+              Need a company logo?
+              <a href="./contact.html" class="emMediaRelations-link"
+                >Click here</a
+              >
+              to register for access to the Bedi Transport asset library.
+            </p>
+            <div class="emMediaRelations-contacts">
+              <div>
+                <span class="emMediaRelations-icon">&#128222;</span>
+                <a href="tel:+383-49-840-442" class="emMediaRelations-link"
+                  >+383-49-840-442</a
+                >
+              </div>
+              <div>
+                <span class="emMediaRelations-icon">&#9993;</span>
+                <a
+                  href="mailto:media@beditransport.com"
+                  class="emMediaRelations-link"
+                  >Media Relations</a
+                >
+              </div>
+              <div>
+                <span class="emMediaRelations-icon">&#120285;</span>
+                Follow
+                <a
+                  href="https://www.instagram.com/bedi_trans?igsh=MXEzc2txY3R4cnZzeA=="
+                  class="emMediaRelations-link"
+                  >@BediTransport</a
+                >
+                for the latest company news
+              </div>
+            </div>
+          </div>
+          <div class="emMediaRelations-right">
+            <p class="emMediaRelations-subtitle">FOR CUSTOMERS</p>
+            <p>
+              For service inquiries or general questions about Bedi Transport,
+              please visit our
+              <a href="./contact.html" class="emMediaRelations-link"
+                >Help and Support Center</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="emFooter">
+      <div class="emFooterDiv">
+        <p>&copy; 2017 BediTransport. All rights reserved.</p>
+        <p>
+          Follow us on:
+          <a
+            href="https://www.facebook.com/share/17STvCkZte/?mibextid=wwXIfr"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/bedi_trans?igsh=MXEzc2txY3R4cnZzeA=="
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </p>
+        <ul class="emFooterNav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./blog.html">News</a></li>
+          <li><a href="./team.html">Team</a></li>
+          <li><a href="./testimonials.html">Testimonials</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./terms.html">Terms & Policies</a></li>
+        </ul>
+      </div>
+    </footer>
     <script src="./javaScript/blog.js"></script>
-</body>
+  </body>
 </html>
