@@ -182,6 +182,123 @@ height: 100vh;
  span{
     color: #ffffff;
 }
+.emBediLogoColumns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 60px 0;
+    background: #fff;
+    min-height: 480px;
+}
+
+.emBediLogoContainer {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emBediLogoColumns .emBediRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.emBediColOne {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 70px;
+}
+
+.emBediColOne video {
+    width: 480px;
+    max-width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.emBediColTwo {
+    flex: 1.2;
+    text-align: left;
+    padding-left: 30px;
+}
+.emBediColTwo .emBedianchor{
+    text-decoration: none;
+    font-family: outfi light;
+    font-size: 18px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+.emBediColTwo .emBedianchor:hover{
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.emBediColTwo h1 {
+    font-family: outfit regular;
+    font-size: 56px;
+    color: #181818;
+    margin-bottom: 24px;
+    margin-top: 0;
+    line-height: 1.1;
+}
+
+.emBediColTwo p {
+    font-family: outfi light;
+    font-size: 26px;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+/* footer style */
+.emFooter {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: outfit medium;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.emFooterDiv p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.emFooterDiv a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+
+}
+
+.emFooter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.emFooterDiv a:hover {
+    color: #ccc;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+
+/* Responsive styles for mobile devices */
 
 @media screen and (max-width: 768px) {
     body {
@@ -248,4 +365,91 @@ height: 100vh;
         margin: 0;
         padding: 0;
     }
+    /* Carousel section responsive styles */
+    .emCarousel .emCarouselh {
+        font-size: 24px;
+        padding: 20px 10px 10px 10px;
+    }
+    .emHline {
+        width: 60px;
+        height: 3px;
+        margin-bottom: 20px;
+    }
+    .emCarouselHeading {
+        font-size: 24px;
+        padding-top: 40px;
+    }
+    .emCarouselLine {
+        width: 60px;
+        height: 3px;
+        margin: 20px auto;
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .carousel-inner h5 {
+        font-size: 18px;
+    }
+    .carousel-inner p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .carousel-caption {
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        padding-bottom: 10px;
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 8px;
+        height: 8px;
+    }
+    .emBediLogoColumns {
+        flex-direction: column;
+        padding: 30px 0 30px 0;
+        min-height: unset;
+    }
+    .emBediLogoContainer {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .emBediLogoColumns .emBediRow {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .emBediColOne {
+        padding-right: 0;
+        justify-content: center;
+    }
+    .emBediColOne video {
+        width: 100%;
+        height: auto;
+        /* max-width: 100%; */
+    }
+    .emBediColTwo {
+        padding-left: 0;
+        text-align: center;
+    }
+    .emBediColTwo h1 {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+    .emBediColTwo p {
+        font-size: 16px;
+    }
+    .emBediColTwo .emBedianchor {
+        font-size: 16px;
+    }
+    /* footer style  */
+         .emFooter {
+             font-size: 14px;
+             padding: 15px 10px;
+         }
+    
+         .emFooter ul {
+             display: none;
+         }
 }
