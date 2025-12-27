@@ -42,6 +42,7 @@ header.emHeader {
     background-color: #000;
     position: sticky;
     top: 0;
+    z-index: 1000;
   
 }
 
@@ -103,6 +104,53 @@ header.emHeader .emMainNav ul li a:hover {
 /* HIDE CHECKBOX */
 #menu-toggle {
     display: none;
+}
+/* style of the main gallery */
+.emMainGallery {
+    text-align: center;   
+    padding: 0 20px 80px 20px;
+}
+.emMainGalleryHeading{
+    text-align: center;
+    font-family: outfit bold;
+    font-size: 40px;
+    padding-top: 80px;
+}
+.emMainGallery p{
+    font-family: outfit medium;
+    font-size: 18px;
+    color: #555555;
+    margin: 10px 0 40px 0;
+}
+.emGalleryLine{
+    width: 100px;
+        height: 4px;
+        background-color: #515050;
+        margin: 30px auto;
+        border-radius: 2px;
+}
+.emMainGallery img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* style of the carousel */
+.emCarousel .emCarouselh{
+    text-align: center;
+    font-family: outfit bold;
+    font-size: 40px;
+    padding: 40px;
+    color: #000000;
+}
+.emHline{
+    width: 100px;
+        height: 4px;
+        background-color: #515050;
+        margin: 0 auto 30px auto;
+        border-radius: 2px; 
 }
 .emCarouselHeading{
     text-align: center;
