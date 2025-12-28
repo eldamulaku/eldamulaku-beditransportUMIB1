@@ -1,26 +1,38 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.querySelector('.emNavLinks');
-  const mobileQuery = window.matchMedia('(max-width: 768px)');
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector(".emNavLinks");
+  const mobileQuery = window.matchMedia("(max-width: 768px)");
 
   function handleMenu() {
     if (mobileQuery.matches) {
-      navLinks.style.display = 'none';
-      menuToggle.addEventListener('change', toggleNav);
+      navLinks.style.display = "none";
+      menuToggle.addEventListener("change", toggleNav);
     } else {
-      navLinks.style.display = '';
-      menuToggle.removeEventListener('change', toggleNav);
+      navLinks.style.display = "";
+      menuToggle.removeEventListener("change", toggleNav);
     }
   }
 
   function toggleNav() {
     if (menuToggle.checked) {
-      navLinks.style.display = 'block';
+      navLinks.style.display = "block";
     } else {
-      navLinks.style.display = 'none';
+      navLinks.style.display = "none";
     }
   }
 
-  mobileQuery.addEventListener('change', handleMenu);
+  mobileQuery.addEventListener("change", handleMenu);
   handleMenu();
+});
+// faqs questions with toggle
+const faqQuestions = document.querySelectorAll(".em-faq-question");
+faqQuestions.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const answer = this.nextElementSibling;
+    const isOpen = answer.style.display === "block";
+    document.querySelectorAll(".em-faq-answer").forEach((ans) => {
+      ans.style.display = "none";
+    });
+    answer.style.display = isOpen ? "none" : "block";
+  });
 });

@@ -1,41 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EldaMulaku-BediTransport</title>
-    <link rel="stylesheet" href="./faq.css">
-
-</head>
-<body id="EM">
+    <link rel="stylesheet" href="./faq.css" />
+  </head>
+  <body id="EM">
     <!-- this is the headee, we use it to navigate through the website -->
-      <header class="emHeader">
-        <nav class="emMainNav">
-            <div class="emLogo">
-                <a href="./index.html">
-                    <img src="./images/logo.PNG" alt="logo">
-                </a>
-            </div>
-        
-           <!-- burger menu -->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="burger">&#9776;</label>
-        
-            <ul class="emNavLinks">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./blog.html">News</a></li>
-                <li><a href="./team.html">Team</a></li>
-                <li><a href="./testimonials.html">Testimonials</a></li>
-                <li><a href="./faq.html">FAQ</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./terms.html">Terms & Policies</a></li>
-            </ul>
-        </nav>
+    <header class="emHeader">
+      <nav class="emMainNav">
+        <div class="emLogo">
+          <a href="./index.html">
+            <img src="./images/logo.PNG" alt="logo" />
+          </a>
+        </div>
+
+        <!-- burger menu -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="burger">&#9776;</label>
+
+        <ul class="emNavLinks">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./blog.html">News</a></li>
+          <li><a href="./team.html">Team</a></li>
+          <li><a href="./testimonials.html">Testimonials</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./terms.html">Terms & Policies</a></li>
+        </ul>
+      </nav>
     </header>
-    <h1>faq</h1>
+    <section class="em-faqs">
+      <div class="em-faqsContainer">
+        <h2>Frequently Asked Questions</h2>
+        <div class="em-faq-item">
+          <button class="em-faq-question" data-index="0">
+            What services does Bedi Transport & Logistics offer?
+          </button>
+          <div class="em-faq-answer" style="display: none">
+            We provide freight forwarding, warehousing, distribution, and
+            customs clearance for various industries.
+          </div>
+        </div>
+        <div class="em-faq-item">
+          <button class="em-faq-question" data-index="1">
+            How can I track my shipment?
+          </button>
+          <div class="em-faq-answer" style="display: none">
+            You can track your shipment using our online tracking system or by
+            contacting our customer support.
+          </div>
+        </div>
+        <div class="em-faq-item">
+          <button class="em-faq-question" data-index="2">
+            Do you offer international shipping?
+          </button>
+          <div class="em-faq-answer" style="display: none">
+            Yes, we offer both domestic and international shipping solutions
+            tailored to your needs.
+          </div>
+        </div>
+        <div class="em-faq-item">
+          <button class="em-faq-question" data-index="3">
+            What are your operating hours?
+          </button>
+          <div class="em-faq-answer" style="display: none">
+            Our team is available Monday to Saturday, 8:00 AM to 6:00 PM.
+          </div>
+        </div>
+        <div class="em-faq-item">
+          <button class="em-faq-question" data-index="4">
+            How do I request a quote?
+          </button>
+          <div class="em-faq-answer" style="display: none">
+            You can request a quote through our website contact form or by
+            calling our office directly.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="emFooter">
+      <div class="emFooterDiv">
+        <p>&copy; 2017 BediTransport. All rights reserved.</p>
+        <p>
+          Follow us on:
+          <a
+            href="https://www.facebook.com/share/17STvCkZte/?mibextid=wwXIfr"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/bedi_trans?igsh=MXEzc2txY3R4cnZzeA=="
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </p>
+        <ul class="emFooterNav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./blog.html">News</a></li>
+          <li><a href="./team.html">Team</a></li>
+          <li><a href="./testimonials.html">Testimonials</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./terms.html">Terms & Policies</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/3c63bc7a17.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./javaScript/faq.js"></script>
-</body>
+  </body>
 </html>
