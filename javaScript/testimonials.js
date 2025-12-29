@@ -24,33 +24,43 @@ document.addEventListener("DOMContentLoaded", function () {
   mobileQuery.addEventListener("change", handleMenu);
   handleMenu();
 });
-// RATING JS
+// RATING STARS JS
 const stars = document.querySelectorAll(".star-rating .star");
-let currentRating = 0;
+const ratingValue = document.getElementById("rating-value");
+let rated = false;
 
 stars.forEach((star) => {
-  star.addEventListener("mouseenter", function () {
-    const val = parseInt(this.getAttribute("data-value"));
-    highlightStars(val);
-  });
-
-  star.addEventListener("mouseleave", function () {
-    highlightStars(currentRating);
-  });
-
   star.addEventListener("click", function () {
-    currentRating = parseInt(this.getAttribute("data-value"));
-    highlightStars(currentRating);
+    if (!rated) {
+      const value = this.getAttribute("data-value");
+      highlightStars(value);
+      ratingValue.textContent = `You rated us ${value} star${
+        value > 1 ? "s" : ""
+      }!`;
+      alert("Thank you for your rating!");
+      rated = true;
+    }
+  });
+
+  star.addEventListener("mouseover", function () {
+    if (!rated) {
+      highlightStars(this.getAttribute("data-value"));
+    }
+  });
+
+  star.addEventListener("mouseout", function () {
+    if (!rated) {
+      highlightStars(0);
+    }
   });
 });
 
-function highlightStars(rating) {
+function highlightStars(count) {
   stars.forEach((star) => {
-    const val = parseInt(star.getAttribute("data-value"));
-    if (val <= rating) {
-      star.classList.add("selected");
+    if (star.getAttribute("data-value") <= count) {
+      star.style.color = "#FFD700";
     } else {
-      star.classList.remove("selected");
+      star.style.color = "";
     }
   });
 }
