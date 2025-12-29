@@ -551,6 +551,9 @@ header.emHeader .emMainNav ul li a:hover {
     .emColTwo {
         padding: 36px 16px 28px 16px;
     }
+    .emColTwo a{
+width: 50%;
+    }
     .emColTwo::before {
         left: 16px;
         top: 20px;
