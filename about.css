@@ -485,7 +485,7 @@ header.emHeader .emMainNav ul li a:hover {
         display: none;
         flex-direction: column;
         background: #1f1f1f;
-        width: 100vw;
+        width: 100%;
         position: absolute;
         top: 60px;
         left: 0;
@@ -552,7 +552,7 @@ header.emHeader .emMainNav ul li a:hover {
         padding: 36px 16px 28px 16px;
     }
     .emColTwo a{
-width: 50%;
+     width: 50%;
     }
     .emColTwo::before {
         left: 16px;
