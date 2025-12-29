@@ -476,13 +476,13 @@ header.emHeader .emMainNav ul li a:hover {
         top: 15px;
         z-index: 1100;
         color: #ffffff;
-        max-width: 100%;
+        
     }
     .emNavLinks {
         display: none;
         flex-direction: column;
         background: #1f1f1f;
-        width: 100vw;
+        width: 100%;
         position: absolute;
         top: 60px;
         left: 0;
