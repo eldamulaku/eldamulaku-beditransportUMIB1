@@ -476,6 +476,7 @@ header.emHeader .emMainNav ul li a:hover {
         top: 15px;
         z-index: 1100;
         color: #ffffff;
+        max-width: 100%;
     }
     .emNavLinks {
         display: none;
