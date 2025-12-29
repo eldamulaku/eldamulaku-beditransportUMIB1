@@ -104,6 +104,63 @@ header.emHeader .emMainNav ul li a:hover {
 #menu-toggle {
     display: none;
 }
+/* MAIN TERMS AND POLICIES STYLE */
+.emMainTerms {
+    max-width: 700px;
+    margin: 40px auto 30px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 36px 28px 32px 28px;
+}
+
+.emMainTerms h1 {
+    font-family: outfit bold;
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+    color: #222;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.emTermsContent h2 {
+    font-family: outfit semi bold;
+    font-size: 1.25rem;
+    color: #333;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.emTermsContent p,
+.emTermsContent ul {
+    font-family: outfit regular;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.emTermsContent ul {
+    padding-left: 22px;
+    margin-top: 0;
+}
+
+.emTermsContent li {
+    margin-bottom: 8px;
+    list-style-type: disc;
+}
+
+.emTermsContent a {
+    color: #0077cc;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.emTermsContent a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}
+
 
 @media screen and (max-width: 768px) {
     body {
@@ -170,4 +227,22 @@ header.emHeader .emMainNav ul li a:hover {
         margin: 0;
         padding: 0;
     }
+    /* terms and policies  */
+         .emMainTerms {
+             padding: 18px 8px 18px 8px;
+             max-width: 98vw;
+         }
+    
+         .emMainTerms h1 {
+             font-size: 1.4rem;
+         }
+    
+         .emTermsContent h2 {
+             font-size: 1.05rem;
+         }
+    
+         .emTermsContent p,
+         .emTermsContent ul {
+             font-size: 0.98rem;
+         }
 }
