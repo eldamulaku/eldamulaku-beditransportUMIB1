@@ -122,67 +122,66 @@ justify-content: space-around;
 flex-direction: row;
 gap: 10%;
 }
-
-/* Custom card button styles for emButtons section */
-.emButtons {
+/* Chck weight section */
+ .emCheckWeight {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 40px 0;
-}
-.emButtonContainer {
+    align-items: flex-start;
+    gap: 48px;
+    margin: 48px 0 32px 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
-.emButtonRow {
-    gap: 32px;
-    width: auto;
-}
-.emColOne, .emColTwo {
+
+.emWeightColumn {
     background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.10);
+    border-radius: 14px;
+    box-shadow: 0 4px 18px 0 rgba(0,0,0,0.10);
+    padding: 36px 32px 32px 32px;
     min-width: 320px;
     max-width: 340px;
-    padding: 32px 32px 24px 32px;
+    flex: 1 1 320px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
-    margin-bottom: 0;
     border-bottom: 4px solid #FFD600;
     transition: box-shadow 0.2s, transform 0.2s;
+    box-sizing: border-box;
 }
-.emColOne:hover, .emColTwo:hover {
-    box-shadow: 0 8px 24px 0 rgba(0,0,0,0.18);
+
+.emWeightColumn:hover {
+    box-shadow: 0 8px 28px 0 rgba(0,0,0,0.16);
     transform: translateY(-2px) scale(1.02);
 }
-.emColOne a, .emColTwo a {
+
+.emWeightColumn h1 {
     font-family: 'outfit bold', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #222;
-    text-decoration: none;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 16px;
+    margin-bottom: 24px;
+    text-align: center;
 }
-.emColOne a::after, .emColTwo a::after {
-    content: '';
-    display: inline-block;
-    width: 36px;
-    height: 36px;
-    margin-left: 24px;
-    border-radius: 50%;
+
+.emWeightColumn input[type="number"] {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 8px;
     border: 2px solid #B0B9C6;
-    background: #fff url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 6L12 10L8 14" stroke="%233B5B8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') center center no-repeat;
-    vertical-align: middle;
-    transition: border-color 0.2s;
+    font-size: 1.1rem;
+    font-family: 'outfit regular', sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    margin-bottom: 8px;
+    box-sizing: border-box;
 }
-.emColOne:hover a::after, .emColTwo:hover a::after {
+
+.emWeightColumn input[type="number"]:focus {
     border-color: #FFD600;
+    box-shadow: 0 2px 8px rgba(255,214,0,0.10);
 }
+
+
 
 /* Community Report Section Styling */
 .emComunity {
@@ -503,6 +502,30 @@ gap: 10%;
         margin: 0;
         padding: 0;
     }
+/* weight check */
+ .emCheckWeight {
+     flex-direction: column;
+     gap: 24px;
+     align-items: center;
+     margin: 24px 0 16px 0;
+ }
+
+ .emWeightColumn {
+     min-width: unset;
+     max-width: 98vw;
+     padding: 24px 12px 18px 12px;
+ }
+
+ .emWeightColumn h1 {
+     font-size: 1.1rem;
+ }
+
+ .emWeightColumn input[type="number"] {
+     font-size: 1rem;
+     padding: 10px 12px;
+ }
+
+
          .emButtonRow {
            display: none;
          }
