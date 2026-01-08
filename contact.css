@@ -163,13 +163,14 @@ header.emHeader .emMainNav ul li a:hover {
     color: #fff;
     border: none;
     border-radius: 6px;
-    padding: 12px 0;
+    padding: 12px 10px;
     font-size: 17px;
     cursor: pointer;
     margin-top: 10px;
     transition: background 0.2s, box-shadow 0.2s;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     letter-spacing: 0.5px;
+    
 }
 
 .emContact button[type="submit"]:hover {
@@ -196,19 +197,21 @@ header.emHeader .emMainNav ul li a:hover {
     padding: 16px 32px;
     border-radius: 10px;
 }
-@media screen and (max-width: 768px) {
-    .emContact {
-        max-width: 95vw;
-        padding: 18px 8vw 18px 8vw;
-    }
-    .emContact h2 {
-        font-size: 22px;
-    }
-}
+
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
-        width: fit-content;
+        /* Remove width: fit-content; */
+    }
+    header.emHeader {
+        padding: 8px 10px;
+    }
+    .emContact {
+        max-width: 95vw;
+        padding: 20px 8px 18px 8px;
+    }
+    .emContact h2 {
+        font-size: 22px;
     }
     .burger {
         display: block;
@@ -238,7 +241,6 @@ header.emHeader .emMainNav ul li a:hover {
         display: flex;
         animation: dropdownFade 0.3s;
     }
-    /* keyframes are used for dropdown animation in css */
     @keyframes dropdownFade {
         from { opacity: 0; transform: translateY(-10px); }
         to { opacity: 1; transform: translateY(0); }
@@ -263,11 +265,18 @@ header.emHeader .emMainNav ul li a:hover {
     }
     #menu-toggle {
         display: none;
-        
     }
-    /* Hide desktop nav spacing */
     header.emHeader .emMainNav ul {
         margin: 0;
         padding: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+    header.emHeader .emLogo img {
+        height: 48px;
+        width: 48px;
+    }
+    header.emHeader .emLogo #emMainHeading {
+        font-size: 18px;
     }
 }

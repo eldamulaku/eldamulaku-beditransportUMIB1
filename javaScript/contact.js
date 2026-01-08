@@ -23,42 +23,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
   mobileQuery.addEventListener("change", handleMenu);
   handleMenu();
-});
-// CONTACT FORM FOR DATA SAVING
-document.addEventListener("DOMContentLoaded", function () {
+
+  // --- CONTACT FORM VALIDATION & LOCALSTORAGE ---
   const form = document.querySelector(".emContact");
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
 
-    // Simple output (replace with AJAX/fetch for backend saving)
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Message:", message);
+      // Email validation using regex
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+      if (!name || !message) {
+        alert("Please fill in all fields.");
+        return;
+      }
 
-    // alert("Thank you for contacting us!");
-    form.reset();
-  });
+      // Save to localStorage as array of objects
+      const contactData = { name, email, message };
+      let allContacts = [];
+      try {
+        const existing = localStorage.getItem("contactData");
+        if (existing) {
+          allContacts = JSON.parse(existing);
+          if (!Array.isArray(allContacts)) allContacts = [];
+        }
+      } catch (err) {
+        allContacts = [];
+      }
+      allContacts.push(contactData);
+      localStorage.setItem("contactData", JSON.stringify(allContacts));
+
+      alert(
+        "Thank you for contacting us, " +
+          name +
+          "! We will get back to you soon."
+      );
+      form.reset();
+    });
+  }
 });
-// LIVE ALERT FROM BOOTSTRAP
-const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
-const appendAlert = (message, type) => {
-  const wrapper = document.createElement("div");
-  wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-    `   <div>${message}</div>`,
-    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-    "</div>",
-  ].join("");
-
-  alertPlaceholder.append(wrapper);
-};
-
-const alertTrigger = document.getElementById("liveAlertBtn");
-if (alertTrigger) {
-  alertTrigger.addEventListener("click", () => {
-    appendAlert("Nice, you triggered this alert message!", "success");
-  });
-}
