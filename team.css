@@ -91,6 +91,10 @@ header.emHeader .emMainNav ul li a {
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
+header.emHeader ul li a.active {
+    color: #f7b32c;
+}
+
 header.emHeader .emMainNav ul li a:hover {
     color: #fff;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);

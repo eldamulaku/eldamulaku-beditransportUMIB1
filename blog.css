@@ -82,7 +82,9 @@ header.emHeader .emMainNav ul {
 header.emHeader .emMainNav ul li {
     margin: 0 15px;
 }
-
+header.emHeader .emNavLinks li a.active {
+    color: #f7b32c;
+}
 header.emHeader .emMainNav ul li a {
     text-decoration: none;
     font-family: outfit medium;
