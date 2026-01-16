@@ -162,7 +162,44 @@ header.emHeader .emMainNav ul li a:hover {
     color: #005fa3;
     text-decoration: underline;
 }
+/* footer section style */
+/* Footer styles */
+.emFooter {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: outfit medium;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
 
+.emFooterDiv p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.emFooterDiv a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+
+}
+
+.emFooter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.emFooterDiv a:hover {
+    color: #ccc;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
 
 @media screen and (max-width: 768px) {
     body {
@@ -247,4 +284,13 @@ header.emHeader .emMainNav ul li a:hover {
          .emTermsContent ul {
              font-size: 0.98rem;
          }
+/* footer section style  */
+.emFooter {
+    font-size: 14px;
+    padding: 15px 10px;
+}
+
+.emFooter ul {
+    display: none;
+}
 }
